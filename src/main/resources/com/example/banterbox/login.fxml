@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banterbox.LoginController">
+   <children>
+      <ImageView fitHeight="726.0" fitWidth="1287.0">
+         <image>
+            <Image url="@images/angryimg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameField" layoutX="281.0" layoutY="290.0" prefHeight="34.0" prefWidth="231.0" promptText="Username" />
+      <Label fx:id="appName" layoutX="243.0" layoutY="165.0" text="BanterBox">
+         <font>
+            <Font name="HelveticaNowDisplay-Thin" size="70.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="360.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickLoginButton" prefHeight="34.0" prefWidth="73.0" text="Login">
+         <font>
+            <Font name="HelveticaNowText-Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="1006.0" layoutY="165.0" prefHeight="277.0" prefWidth="260.0" text="Sign up, speak up, and spark conversations!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="HelveticaNowText-Regular" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="1095.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickRegisterButton" prefHeight="34.0" prefWidth="82.0" text="Register">
+         <font>
+            <Font name="HelveticaNowText-Medium" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="281.0" layoutY="343.0" prefHeight="34.0" prefWidth="231.0" promptText="Password" />
+      <Label fx:id="errorText" alignment="CENTER" layoutX="281.0" layoutY="381.0" prefHeight="19.0" prefWidth="231.0" textAlignment="CENTER">
+         <font>
+            <Font name="HelveticaNowText-Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
